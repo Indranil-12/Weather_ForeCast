@@ -1,0 +1,49 @@
+body {
+    background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+}
+
+.navbar {
+    background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4, 189, 228, 1) 0%, rgba(2, 83, 185, 1) 100.2%);
+}
+
+#gameName {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#gameName:hover {
+    opacity: 0.5;
+}
+.name {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.container{
+    margin-top: 20px;
+}
+#inputCity{
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    width: 200px;
+    height: 30px;
+    margin-top: 4px;
+}
+#inputDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}

@@ -132,6 +132,7 @@ async function apiCall(city) {
         }
     }
 }
+apiCall('Kolkata');
 
 //Convert Sunrise & Sunset Time
 function convertTimestamp(timestamp) {

@@ -4,7 +4,7 @@ const apiKey = "507445716c184c5438563e1f2c464b44";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 //Table Item Placing
-let tableItem = ['Kolkata', 'Pune', 'Delhi', 'London', 'Bangalore'];
+let tableItem = ['Odisha', 'Pune', 'Delhi', 'London', 'Bangalore'];
 let table = document.querySelector('#tableItem');
 let tableOut = '';
 let tableCity;
@@ -69,8 +69,15 @@ let citySearch = document.querySelector('#cityBtn');
 let cityHead = document.querySelector('#cityHead');
 citySearch.addEventListener("click", () => {
     let city = (document.querySelector('#inputCity').value);
-    apiCall(city);
-    cityHead.innerText = `Weather of ${city}`;
+    if(city==""){
+        alert("Enter a city Name");
+    }
+    else{
+        apiCall(city);
+        cityHead.innerText = `🏘 Weather of ${city} 🌇`;
+        document.querySelector('#inputCity').value="";
+    }
+    
 })
 
 //Fetch Weather API Search Bar
